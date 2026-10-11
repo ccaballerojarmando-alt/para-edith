@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#073b2a">
+  <title>Para Edith 💚</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="hearts-bg" aria-hidden="true"></div>
+  <header class="intro">
+    <p class="eyebrow">8 de marzo · Un detalle hecho con cariño</p>
+    <h1>Para mi mujer adorada, <span>Edith</span> 💚</h1>
+    <p class="sub">Hay personas que hacen más bonito el mundo con solo existir… tú eres una de ellas.</p>
+    <div class="flower-wrap">
+      <img class="flower" src="imagenes/flor_cactus.png" alt="Flor de cactus rosada">
+      <p>Como esta flor, hay bellezas que aparecen para sorprendernos.</p>
+    </div>
+    <button id="openButton" class="main-button">Presiona este botón 💚</button>
+    <p class="small-note">Sube un poquito el volumen para disfrutar la sorpresa 🎶</p>
+  </header>
+
+  <main id="surprise" class="surprise hidden" aria-live="polite">
+    <section class="door-stage">
+      <div class="door-frame" id="doorFrame">
+        <div class="door-image" id="doorImage" role="img" aria-label="Una puerta cerrada que se abrirá"></div>
+        <div class="door-glow"></div>
+      </div>
+      <p id="doorCaption" class="door-caption">Hay una sorpresa esperándote al otro lado…</p>
+    </section>
+
+    <section id="memories" class="memories hidden">
+      <p class="eyebrow">Unos recuerdos especiales</p>
+      <h2>Un pedacito de nosotros 💚</h2>
+      <div class="photo-card">
+        <img id="memoryPhoto" src="imagenes/foto1.jpg" alt="Un recuerdo especial">
+        <p id="photoCaption">Cada momento contigo tiene algo especial.</p>
+        <div class="dots" id="dots" aria-label="Progreso de las fotos"></div>
+      </div>
+      <p class="memory-note">No hacen falta palabras perfectas cuando una sonrisa lo dice todo.</p>
+    </section>
+
+    <section id="finalMessage" class="final-message hidden">
+      <div class="final-hearts">💚 ✨ 💚 ✨ 💚</div>
+      <p class="for-her">Para ti, Edith</p>
+      <h2>¡FELIZ DÍA<br>DE LA MUJER!</h2>
+      <p class="big-tqm">TQM, CORAZÓN 💚</p>
+      <p class="closing">Que nunca te falten motivos para sonreír, sueños por cumplir y personas que te recuerden lo valiosa que eres.</p>
+      <button id="replayButton" class="main-button secondary">Volver a ver la sorpresa ↻</button>
+    </section>
+  </main>
+
+  <audio id="backgroundMusic" src="imagenes/cancion.mp4" preload="auto" loop></audio>
+  <footer>Hecho con cariño para Edith 💚</footer>
+  <script src="script.js"></script>
+</body>
+</html>
